@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, rgba(238,174,212,1) 0%, rgba(110,101,190,1) 100%);
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    margin: 100px auto 20px auto;
+    padding: 15px 20px;
+    background: #FAF9F6;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px 20px 0px 20px;
+    background: #FAF9F6;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin: 0;
+    color: #9a33ff;
+    font-weight: bolder;
+}
+
+h3 {
+    margin: 0;
+    font-weight: bolder;
+}
+
+button {
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+.remove {
+    margin-left: auto;
+    color: black;
+    background: #f9f9f9;
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+.remove:hover {
+    color:  #dc3545;
+    background: #f9f9f9;
+    
+}
+
+#addTaskButton {
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    bottom: -30px;
+    background-color: #9a33ff;
+}
+
+#clearAllButton, #submitTaskButton {
+    background-color: white;
+    color: black;
+    padding: 0%;
+    color: #9a33ff;
+}
+#submitTaskButton{
+    position: relative;
+    right: 15px;
+    z-index: 999;   
+    width: 22px;
+}
+#taskTitleInput, #taskDescriptionInput {
+    border: 1px solid #9a33ff;
+    min-width: 300px;
+}
+
+#taskDescriptionInput{
+    border: 1px solid #9a33ff ;
+    min-width: 300px;
+    position: relative;
+    left: 16px;
+    margin-top: 2px
+}
+
+#taskTitleInput:focus, #taskDescriptionInput:focus {
+    border: none;
+    border: 3px solid #9a33ff;
+}
+
+#taskList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between tasks */
+}
+
+.task-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.task-description{
+    margin-top: 15px;
+}
