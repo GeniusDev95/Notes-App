@@ -82,20 +82,24 @@ button:hover {
 }
 #submitTaskButton{
     position: relative;
-    right: 15px;
+    right: 8px;
     z-index: 999;   
-    width: 22px;
+    width: 18px;
+    /* height: 18px; */
 }
 #taskTitleInput, #taskDescriptionInput {
     border: 1px solid #9a33ff;
     min-width: 300px;
 }
 
+#taskTitleInput{
+    margin-right: -5px;
+}
 #taskDescriptionInput{
     border: 1px solid #9a33ff ;
     min-width: 300px;
     position: relative;
-    left: 16px;
+    left: 14px;
     margin-top: 2px
 }
 
@@ -121,4 +125,33 @@ button:hover {
 
 .task-description{
     margin-top: 15px;
+}
+.main-container{
+    padding: 5%;
+}
+
+
+@media screen and (max-width: 420px) {
+
+
+#taskTitleInput{
+    min-width: 275px;
+    margin-right: -5px;
+}
+#taskDescriptionInput{
+    min-width: 275px;
+    position: relative;
+    left: 14px;
+}
+h2 {
+    font-weight: bolder;
+    font-size: large;
+}
+h3 {
+    font-size: large;
+}
+.task-description{
+    font-size: small;
+}
+
 }
